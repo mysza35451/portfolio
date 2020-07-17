@@ -1,182 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Maciej's Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-    <meta
-      name="google-site-verification"
-      content="o-5ZMp0xXsTclg9enb2TBYvACjE-5vEPqNzl0vLGSFo"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./icon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <title>Portfolio</title>
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <ul class="mobile-title-burger">
-          <li><a class="nav-title-mobile">Maciej Myszczynski</a></li>
-        </ul>
 
-        <ul class="nav-links">
-          <li><a class="nav-link" href="#about-me-section">About Me</a></li>
-          <li><a class="nav-link" href="#education-section">Education</a></li>
-          <li>
-            <a class="nav-title" href="#intro-section">Maciej Myszczynski</a>
-          </li>
-          <li><a class="nav-link" href="#experience-section">Experience</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body id="page-top">
+    <!--/ Nav Star /-->
+    <nav
+      class="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top"
+          >Maciej Myszczynski</a
+        >
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+          aria-controls="navbarDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div
+          class="navbar-collapse collapse justify-content-end"
+          id="navbarDefault"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link js-scroll active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#work">Work</a>
+            </li>
 
-    <main>
-      <section class="intro" id="intro-section">
-        <div class="intro-img-container">
-          <img src="./intro-img.JPG" alt="me" />
+            <li class="nav-item">
+              <a class="nav-link js-scroll" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="welcome-text-and-icons">
-          <div class="welcome-text">
-            <h1>Software</h1>
-            <h1>&</h1>
-            <h1>Web Developer</h1>
-            <h2>Experienced in:</h2>
-            <h2>
-              HTML, CSS, JS and Java
-            </h2>
+      </div>
+    </nav>
+    <!--/ Nav End /-->
 
-            <div class="welcome-icons">
-              <a href="https://github.com/mysza35451">
-                <img class="welcome-icon" src="./github-logo.png" alt="" />
-              </a>
-              <a href="https://uk.linkedin.com/in/maciej-myszczynski-7428031a1">
-                <img class="welcome-icon" src="./linkedin-icon.png" alt="" />
-              </a>
-              <a href="mailto:maciejmyszczynskiofficial@gmail.com">
-                <img class="welcome-icon" src="./gmail-512.png" alt="" />
+    <!--/ Intro Skew Star /-->
+    <div
+      id="home"
+      class="intro route bg-image"
+      style="background-image: url(img/intro-bg.jpg);"
+    >
+      <div class="overlay-itro"></div>
+      <div class="intro-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+            <h1 class="intro-title mb-4">Hi! I'm Maciej</h1>
+            <p class="intro-subtitle">
+              <span class="text-slider-items"
+                >Owner of M.M Web Developers,Web Developer,Web Designer,Backend
+                Developer</span
+              ><strong class="text-slider"></strong>
+            </p>
+            <p class="pt-3">
+              <a
+                class="btn btn-danger btn js-scroll px-4"
+                href="#about"
+                role="button"
+                >About me...</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Intro Skew End /-->
+
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img
+                          src="img/testimonial-2.jpg"
+                          class="img-fluid rounded b-shadow-a"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p>
+                          <span class="title-s">Name: </span>
+                          <span>Maciej Myszczynski</span>
+                        </p>
+                        <p>
+                          <span class="title-s">Profile: </span>
+                          <span
+                            >Full Stack Developer with backend expertise</span
+                          >
+                        </p>
+                        <p>
+                          <span class="title-s">Email: </span>
+                          <span
+                            ><a
+                              href="mailto:maciejmyszczynskiofficial@gmail.com"
+                              >maciejmyszczynskiofficial@gmail.com</a
+                            >
+                          </span>
+                        </p>
+                        <p>
+                          <span class="title-s">Mobile: </span>
+                          <span
+                            ><a href="tel:07947953956">07947953956</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 85%;"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">65%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 65%;"
+                        aria-valuenow="65"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span>PHP</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 50%;"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span>JavaScript</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 90%;"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <span>JQuery</span> <span class="pull-right">70%</span>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        style="width: 70%;"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      I am a hardworking undergraduate software development
+                      professional driven to increase team effectiveness.
+                      Skilled in directing development with creative and
+                      performance-oriented approach. Furthermore, well-organised
+                      and customer-focused with proven skills in project
+                      management and team leadership. Focused on usability and
+                      performance improvements. Proven history of developing
+                      useful, interesting and modern projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--/ Section Services Star /-->
+    <section id="service" class="services-mf route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-monitor"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  As an owner of M.M Web Developments I have raised my standards
+                  by providing all my clients with professional wireframes
+                  throughout the initial part of the project. As a result, I
+                  managed to increase the connection between me and the clients.
+                  Consequently, I am able to deliver exactly what the customer
+                  requires!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-code-working"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  My story with Web Development started by hating it in the
+                  first year of my studies at Middlesex University London. As
+                  soon as I got away from learning the boring HTML and moved
+                  into JavaScript development I fell in love and have been
+                  expanding my knowledge ever since!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"
+                  ><i class="ion-android-phone-portrait"></i
+                ></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Responsive Design</h2>
+                <p class="s-description text-center">
+                  I have amazing experience with using Bootstrap framework that
+                  became very handy for quick backend projects. I am also
+                  comfortable with Flexbox in CSS and have basic knowledge using
+                  Grid.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Design</h2>
+                <p class="s-description text-center">
+                  I have spent a fair amount of hours using Photoshop software
+                  throughout the time I have been creating posters for the
+                  Society I was the president of at Middlesex University.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Section Services End /-->
+
+    <div
+      class="section-counter paralax-mf bg-image"
+      style="background-image: url(img/counters-bg.jpg);"
+    >
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box">
+              <div class="counter-ico">
+                <span class="ico-circle"
+                  ><i class="ion-checkmark-round"></i
+                ></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">5</p>
+                <span class="counter-text">WEBSITES HOSTED ONLINE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"
+                  ><i class="ion-ios-calendar-outline"></i
+                ></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">2</p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="ion-ios-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">5</p>
+                <span class="counter-text">TOTAL CLIENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+              </div>
+              <div class="counter-num">
+                <p class="counter">100000</p>
+                <span class="counter-text">LINES OF CODE WRITTEN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--/ Section Portfolio Star /-->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="img/pl-school-gif.gif" data-lightbox="gallery-mf">
+                <div class="work-img">
+                  <img src="img/pl-school-gif.gif" alt="" class="img-fluid" />
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">Polish Saturday School in Watford</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory"
+                          >An example of a simple, static website that provides
+                          the school with easy to read information and easy to
+                          apply options!</span
+                        >
+                        /
+                        <p></p>
+                        <p>
+                          <a href="https://mysza35451.github.io/plszkola/"
+                            >Live Preview</a
+                          >
+                        </p>
+                        <p></p>
+                        <p>
+                          <a href="https://github.com/mysza35451/plszkola"
+                            >GitHub</a
+                          >
+                        </p>
+
+                        <span class="w-date">2020</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <span class="ion-ios-plus-outline"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
         </div>
-        <section class="about-me" id="about-me-section">
-          <div class="about-me-img-container">
-            <img src="./about-me-img.jpg" alt="" />
+      </div>
+    </section>
+    <!--/ Section Portfolio End /-->
+
+    <!--/ Section Testimonials Star /-->
+    <div
+      class="testimonials paralax-mf bg-image"
+      style="background-image: url(img/overlay-bg.jpg);"
+    >
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="testimonial-mf" class="owl-carousel owl-theme">
+              <div class="testimonial-box">
+                <div class="author-test">
+                  <span class="author">Paul</span>
+                </div>
+                <div class="content-test">
+                  <p class="description lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt molestiae quidem id a voluptatibus quasi recusandae
+                    dolorum voluptas reprehenderit ad non, inventore labore
+                    eius, est aspernatur, suscipit veniam distinctio. Natus
+                    facilis aspernatur excepturi debitis corporis laudantium rem
+                    officiis in consequuntur assumenda, blanditiis ut molestias
+                    ipsam ea dolores, est incidunt placeat ipsum dignissimos
+                    exercitationem, accusantium possimus saepe facere sapiente.
+                    Iste eum tempore consequuntur hic perferendis quibusdam
+                    deleniti corrupti consectetur sint laboriosam cum
+                    exercitationem soluta possimus pariatur, omnis quos et
+                    eveniet natus repudiandae vel numquam ipsam. Veniam eligendi
+                    dolorem eaque facere molestias? Animi iusto odio eum
+                    doloribus rerum iure eaque saepe optio.
+                  </p>
+                  <span class="comit"><i class="fa fa-quote-right"></i></span>
+                </div>
+              </div>
+              <div class="testimonial-box">
+                <div class="author-test">
+                  <img
+                    src="img/testimonial-4.jpg"
+                    alt=""
+                    class="rounded-circle b-shadow-a"
+                  />
+                  <span class="author">Marta Socrate</span>
+                </div>
+                <div class="content-test">
+                  <p class="description lead">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                    rem tenetur enim ab tempora facilis non! Laudantium ipsa
+                    tenetur nemo, expedita veniam harum. Quod pariatur quia,
+                    suscipit eius praesentium culpa ratione temporibus
+                    perferendis vel! Inventore eligendi nulla nemo in, adipisci
+                    accusantium aut minus! Deleniti possimus numquam ex quidem
+                    sint beatae minus provident vel blanditiis incidunt fuga
+                    omnis laudantium consequuntur distinctio iusto atque hic
+                    ullam, quam nulla cumque! Delectus asperiores modi nihil
+                    magni velit placeat temporibus vel dicta veniam sed? Tenetur
+                    laboriosam quos dolores consequuntur, ullam officiis quasi
+                    dolore, maiores veniam facilis aliquid repudiandae quod quas
+                    nam distinctio sint? Accusamus, beatae?
+                  </p>
+                  <span class="comit"><i class="fa fa-quote-right"></i></span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="about-me-text">
-            <h1>About Me:</h1>
-            <h2>
-              I am a hardworking undergraduate software development professional
-              driven to increase team effectiveness. Skilled in directing
-              development with creative and performance-oriented approach.
-              Furthermore, well-organised and customer-focused with proven
-              skills in project management and team leadership. Focused on
-              usability and performance improvements. Proven history of
-              developing useful, interesting and modern projects.
-            </h2>
+        </div>
+      </div>
+    </div>
+
+    <!--/ Section Contact-Footer Star /-->
+    <section
+      class="paralax-mf footer-paralax bg-image sect-mt4 route"
+      style="background-image: url(img/overlay-bg.jpg);"
+    >
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        Message or call me using the details listed below. I
+                        hope to hear from you soon!
+                      </p>
+                      <ul class="list-ico">
+                        <li>
+                          <span class="ion-ios-location"></span>
+                          <a
+                            href="https://www.google.com/maps/place/Watford/data=!4m2!3m1!1s0x487614c908fcc35b:0x5d521bb3eb9734f1?sa=X&ved=2ahUKEwjc0JeajNDqAhVIZxUIHRMTAnUQ8gEwAHoECAsQAQ"
+                            >Watford, London</a
+                          >
+                        </li>
+                        <li>
+                          <span class="ion-ios-telephone"></span>
+                          <a href="tel:07947953956">07947953956</a>
+                        </li>
+                        <li>
+                          <span class="ion-email"></span>
+                          <a href="mailto:maciejmyszczynskiofficial@gmail.com"
+                            >maciejmyszczynskiofficial@gmail.com</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <!-- <ul>
+                        <li>
+                          <a href=""
+                            ><span class="ico-circle"
+                              ><i class="ion-social-facebook"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            ><span class="ico-circle"
+                              ><i class="ion-social-instagram"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            ><span class="ico-circle"
+                              ><i class="ion-social-twitter"></i></span
+                          ></a>
+                        </li>
+                        <li>
+                          <a href=""
+                            ><span class="ico-circle"
+                              ><i class="ion-social-pinterest"></i></span
+                          ></a>
+                        </li>
+                      </ul> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <section class="education" id="education-section">
-            <hr />
-            <table>
-              <caption class="educationTitle">
-                Education
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col">School</th>
-                  <th scope="col">Period</th>
-                  <th scope="col">Focus of teaching</th>
-                  <th scope="col">Qualification</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td data-label="School">
-                    Middlesex University
-                  </td>
-                  <td data-label="Period">2018–2021</td>
-                  <td data-label="Teaching">Information Technology</td>
-                  <td data-label="Qualification">
-                    Bachelor of Science
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label="School">
-                    Haydon School
-                  </td>
-                  <td data-label="Period">2016–2018</td>
-                  <td data-label="Teaching">Physics, Maths and Business</td>
-                  <td data-label="Qualification">
-                    A-Level
-                  </td>
-                </tr>
-                <tr>
-                  <td data-label="School">
-                    Northwood School
-                  </td>
-                  <td data-label="Period">2013-2016</td>
-                  <td data-label="Teaching">General GSCEs</td>
-                  <td data-label="Qualification">
-                    GSCEs
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <section class="experience" id="experience-section">
-              <hr />
-              <table>
-                <caption class="educationTitle">
-                  Experience
-                </caption>
-                <thead>
-                  <tr>
-                    <th scope="col">Company</th>
-                    <th scope="col">Job Title</th>
-                    <th scope="col">Period</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td data-label="Company">
-                      Self-Employed
-                    </td>
-                    <td data-label="Job Title">
-                      Full Stack Web Developer and Designer
-                    </td>
-                    <td data-label="Period">Sep 2019-Current</td>
-                  </tr>
-                  <tr>
-                    <td data-label="Company">
-                      Middlesex University
-                    </td>
-                    <td data-label="Job Title">Student Learning Assistant</td>
-                    <td data-label="Period">Oct 2019-Current</td>
-                  </tr>
-                  <tr>
-                    <td data-label="Company">
-                      Connectium Ltd
-                    </td>
-                    <td data-label="Job Title">IT Engineer</td>
-                    <td data-label="Period">Jul 2019-Current</td>
-                  </tr>
-                  <tr>
-                    <td data-label="Company">
-                      NW London Commercial
-                    </td>
-                    <td data-label="Job Title">Property Administrator</td>
-                    <td data-label="Period">Jul 2018-October 2018</td>
-                  </tr>
-                </tbody>
-              </table>
-            </section>
-          </section>
-        </section>
-      </section>
-    </main>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="copyright-box">
+                <p class="copyright">
+                  &copy; Copyright <strong>Maciej Myszczynski</strong>. All
+                  Rights Reserved
+                </p>
+                <div class="credits"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!--/ Section Contact-footer End /-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
   </body>
 </html>
