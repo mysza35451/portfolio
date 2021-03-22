@@ -83,6 +83,9 @@ nav {
 .intro-img-container img {
   height: 90vh;
   background-image: url(img/intro-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .welcome-text-and-icons {
   width: 50%;
