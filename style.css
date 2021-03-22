@@ -248,6 +248,9 @@ table th {
     border-bottom: 0;
   }
 }
+.intro-img-container img {
+  background-image: url(img/intro-bg-mobile.jpg);
+}
 @media only screen and (max-width: 1024px) {
   main {
     display: flex;
@@ -262,11 +265,7 @@ table th {
   .welcome-text-and-icons {
     border: none;
   }
-  .intro-img-container img {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
+
   .about-me {
     display: flex;
     flex-wrap: wrap;
